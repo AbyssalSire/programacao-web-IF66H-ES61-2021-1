@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de novo usuário</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <script src="../../scripts/header.js" type="text/javascript" defer></script>
+    <script src="../../scripts/script.js"></script>
+</head>
+
+<body>
+    <header-component></header-component>
+    <div class="container p-3 my-3 bg-dark text-white">
+
+        <h1>Cadastro de novo usuário autorizado </h1>
+
+        <form action="../paginas/index.html">
+            <label for="enunciado">Nome:</label><br>
+            <input type="text" class="form-control" id="pessoa-resp" name="pessoa-rest"><br>
+            <label for="enunciado">Função da pessoa: </label>
+            <select name="func-pessoa" class="form-control" id="func-pessoa">
+                <option value="aluno">Aluno</option>
+                <option value="professor">Professor</option>
+                <option value="servidor">Servidor</option>
+                <option value="pessoa-de-fora">Pessoa de fora da UTF</option>
+            </select>
+            <br>
+            <label for="enunciado">Dados extras:</label><br>
+            <input type="text" class="form-control" id="pessoa-extras" name="pessoa-extras"><br>
+            <label for="enunciado">Telefone:</label><br>
+            <input type="text" class="form-control" id="pessoa-fone" name="pessoa-fone"><br>
+            <label for="enunciado">E-mail:</label><br>
+            <input type="text" class="form-control" id="pessoa-email" name="pessoa-email"><br>
+            <input type="submit" value="Cadastrar" class="btn btn-success" onclick="javascript:alert('Cadastrado com sucesso')"><br><br>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de salas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <script src="../../scripts/script.js"></script>
+    <script src="../../scripts/header.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+    <header-component></header-component>
+    <div class="container p-3 my-3 bg-dark text-white">
+        <div class="form-group">
+            <h1>Agendamento de Salas</h1>
+            <h3>Prédio</h3>
+            <form action="../paginas/index.html">
+                <label for="enunciado">Lista de blocos da UTF:</label>
+                <select name="predios" id="predios" class="form-control">
+                    <option selected>Seleciona a aréa da UTFPR</option>
+                    <option value="areas-administracao">Áreas administraticas</option>
+                    <option value="bloco-a">Bloco A</option>
+                    <option value="bloco-ghi">Bloco GHI</option>
+                    <option value="bloco-k">Bloco K</option>
+                    <option value="bloco-s">Bloco S</option>
+                </select>
+                <br>
+                <h3>Sala/Numero</h3>
+                <label for="enunciado">Lista de salas/numeros disponíveis</label>
+                <select name="sala-numero" id="sala-numero" class="form-control">
+                    <option selected>Seleciona o número da sala</option>
+                    <option value="015">Sala 015</option>
+                    <option value="105">Sala 105</option>
+                    <option value="205">Sala 205</option>
+                    <option value="323">Sala 323</option>
+                    <option value="anfiteatro">Sala Anfiteatro</option>
+                    <option value="reunioes">Sala reuniões</option>
+                </select>
+                <br>
+                <h3>Dados Extras</h3>
+                <label for="enunciado">Dados extras do ambiente em questão:</label><br>
+                <textarea name="dados-extras" id="dados-extras" cols="50" rows="5"></textarea><br><br>
+                <h3>Função da pessoa a quem agendar</h3>
+                <label for="enunciado">Pessoa requisitando agendamento: </label>
+                <select name="func-pessoa" id="func-pessoa" class="form-control">
+                    <option selected>Função da pessoa</option>
+                    <option value="aluno">Aluno</option>
+                    <option value="professor">Professor</option>
+                    <option value="servidor">Servidor</option>
+                    <option value="pessoa-de-fora">Pessoa de fora da UTF</option>
+                </select>
+                <br>
+                <h3>Agendado para</h3>
+                <label for="enunciado">Pessoa requisitando agendamento: </label>
+                <select name="pessoa-resp" id="pessoa-resp" class="form-control">
+                    <option selected>Nome da pessoa requisitando</option>
+                    <option value="lucas">Lucas</option>
+                    <option value="joao">João</option>
+                    <option value="joana">Joana</option>
+                    <option value="maria">Maria</option>
+                    <option value="mario">Mario</option>
+                </select>
+                <br>
+                <h3>Dias agendados</h3>
+                <label for="enunciado">Selecione o dia de agendamento: </label>
+                <select name="dia-agendado" id="dia-agendado" class="form-control">
+                    <option selected>Dia do mês</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <br>
+                <button type="button" class="btn btn-success" id="adicionar-mais-dias" onclick="javascript:alert('Função com problemas, será implementada na segunda etapa, por favor ler o comentário no arquivo scrit.js')">Adicionar mais dias</button>
+                <br>
+                <br>
+
+                <h3>Agendado por</h3>
+                <label for="enunciado">Funcionário responsável:</label><br>
+                <input type="text" class="form-control" id="funcionario" name="funcionario"><br>
+                <input type="submit" value="Cadastrar" class="btn btn-success" id="botao"
+                    onclick="javascript:alert('Cadastrado com sucesso')">
+            </form>
+        </div>
+        <br>
+        <table id="calendario" class="table table-dark">
+            <tr>
+                <thead class="thead-light">
+                    <th>Domingo</th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                    <th>Sábado</th>
+                </thead>
+            </tr>
+            <tr>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+            </tr>
+            <tr>
+                <th>11</th>
+                <th>12</th>
+                <th>13</th>
+                <th>14</th>
+                <th>15</th>
+                <th>16</th>
+                <th>17</th>
+            </tr>
+            <tr>
+                <th>18</th>
+                <th>19</th>
+                <th>20</th>
+                <th>21</th>
+                <th>22</th>
+                <th>23</th>
+                <th>24</th>
+            </tr>
+            <tr>
+                <th>25</th>
+                <th>26</th>
+                <th>27</th>
+                <th>28</th>
+                <th>29</th>
+                <th>30</th>
+                <th>31</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</body>
+
+</html>

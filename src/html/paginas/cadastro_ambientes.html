@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de nova sala</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <script src="../../scripts/header.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <header-component></header-component>
+    <div class="container p-3 my-3 bg-dark text-white">
+        <h1>Cadastro novo ambiente</h1>
+
+        <form action="../paginas/index.html">
+            <label for="enunciado">Prédio da UTF:</label>
+            <select name="predios" id="predios" class="form-control">
+                <option value="areas-administracao">Áreas administraticas</option>
+                <option value="bloco-a">Bloco A</option>
+                <option value="bloco-ghi">Bloco GHI</option>
+                <option value="bloco-k">Bloco K</option>
+                <option value="bloco-s">Bloco S</option>
+            </select>
+            <br>
+            <label for="enunciado">Numero da Sala</label>
+            <input type="text" id="sala-numero" name="sala-numero" class="form-control"><br>
+            <label for="enunciado">Responsável pelo prédio</label>
+            <input type="text" id="responsavel" name="responsavel" class="form-control"><br>
+            <input type="submit" value="Cadastrar" class="btn btn-success" onclick="javascript:alert('Cadastrado com sucesso')">
+        </form>
+
+    </div>
+
+</body>
+
+</html>
