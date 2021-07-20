@@ -6,7 +6,7 @@ Autor: Lucas Malheiros, R.A. 1835793
 
 
 ## Proposta
-O objetivo da aplicação é a criação de uma espácie de site de agendamento de salas da universidade
+O objetivo da aplicação é a criação de uma espécie de site de agendamento de salas da universidade
 
 ## Avaliações
 A primeira entrega da aplicação será avaliada com base nos critérios:
