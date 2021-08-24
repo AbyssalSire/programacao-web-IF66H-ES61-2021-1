@@ -26,18 +26,6 @@ function Card({key, nome, funcao, emailCadastrado, telefone, avatar, dadosExtras
                 Telefone para contato: {telefone} <br /> 
                 Dados extras: {dadosExtras}
                 </p>
-
-                <div className="row rodape-card d-flex align-items-center">
-                    <div className="col-6">
-                        {
-                            useSelector(state => state.usuarioLogado) > 0 ?
-                                <Link to="agendamento" className="btn btn-sm btn-detalhes">Fazer agendamento</Link>
-                                :
-                                <Link to="login" className="btn btn-sm btn-detalhes">Login</Link>
-                        }
-                    </div>
-
-                </div>
             </div>
         </div>
 
