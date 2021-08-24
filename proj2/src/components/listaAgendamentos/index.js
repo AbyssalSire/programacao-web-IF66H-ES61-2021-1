@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 import './listaAgendamentos.css'
 
-function listaDeAgendamentos({ key, predio, sala, dataAgendamento, horaAgendamentoInicio, horaAgendamentoFim, pessoaNome, funcPessoa, dadosExtras, responsavelPeloAgendamento, dataCriado }) {
+function ListaAgendamentos({predio, sala, dataAgendamento, horaAgendamentoInicio, horaAgendamentoFim, pessoaNome}) {
     return (
         <div className="col-md-3 col-sm-12 cartao text-center">
             <div className="texto-body">
@@ -13,10 +11,7 @@ function listaDeAgendamentos({ key, predio, sala, dataAgendamento, horaAgendamen
                     Data agendada: {dataAgendamento} <br />
                     Inicio: {horaAgendamentoInicio} <br />
                     Fim: {horaAgendamentoFim} <br />
-                    Agendado para {pessoaNome} cuja função na UTF é de {funcPessoa} <br />
-                    Dados extras: {dadosExtras}
-
-                    Agendado por: {responsavelPeloAgendamento} em {dataCriado}
+                    Agendado para {pessoaNome}<br />
                 </p>
 
             </div>
@@ -25,4 +20,4 @@ function listaDeAgendamentos({ key, predio, sala, dataAgendamento, horaAgendamen
     )
 }
 
-export default listaDeAgendamentos;
+export default ListaAgendamentos;

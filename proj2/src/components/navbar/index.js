@@ -31,7 +31,7 @@ function NavBar() {
                                             <Link to="cadastro_ambientes" className="nav-link active">Cadastrar novo ambiente</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="listaAgendamentos" className="nav-link active">Lista de Agendamentos</Link>
+                                            <Link to="listaAgendamento" className="nav-link active">Lista de Agendamentos</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link onClick={() => dispatch({ type: "LOGOUT" })} className="nav-link active">Sair</Link>

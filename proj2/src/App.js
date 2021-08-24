@@ -15,7 +15,7 @@ import Login from './view/login';
 import Home from './view/home'
 import Pessoas_autorizadas from './view/pessoas_autorizadas'
 import { PersistGate } from "redux-persist/integration/react";
-import listaAgendamentos from './view/listaAgendamentos'
+import ListaAgendamento from './view/listaAgendamentos'
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
           <Route exact path='/cadastro_autorizado' component={Cadastro_autorizado}></Route>
           <Route exact path='/cadastro_ambientes' component={Cadastro_ambientes}></Route>
           <Route exact path='/pessoas_autorizadas' component={Pessoas_autorizadas}></Route>
-          <Route exact path='/listaAgendamentos' component={listaAgendamentos}></Route>
+          <Route exact path='/listaAgendamento' component={ListaAgendamento}></Route>
         </Router>
       </PersistGate>
     </Provider>
