@@ -1,0 +1,25 @@
+.cartao{
+    background: black;
+    padding: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.btn-detalhes{
+    background-color: #0671c8;
+    color: #fff;
+}
+
+.btn-detalhes:hover{
+    background-color: #008cff;
+    color: #fff;
+    box-shadow: none;
+    padding-bottom: 3px;
+}
+
+.texto-text{
+    max-height: 100px;
+    overflow: hidden;
+}
