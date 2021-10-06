@@ -65,4 +65,4 @@ O projeto web deve contemplar uma aplicação web COERENTE com no mínimo 5 pág
 
 Data entrega 24/08/2021
 
-### Nota: /10
+### Nota: 10/10
