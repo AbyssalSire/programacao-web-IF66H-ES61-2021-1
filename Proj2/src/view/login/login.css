@@ -1,0 +1,13 @@
+.login-content{
+    width: 300px;
+    border-radius: 20px;
+}
+.btn-login{
+    background-color: #0671c8;
+    color: #fff;
+}
+
+.btn-login:hover{
+    background-color: #008cff;
+    color: #fff;
+}
