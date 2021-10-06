@@ -1,0 +1,25 @@
+.nav-link {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-link:hover{
+    color: white;
+    box-shadow: none;
+    padding-bottom: 8px;
+    background-color: rgb(58, 68, 155);
+}
+
+.nav-item a{
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: normal;
+    font-size: medium;
+}
+
+.nav-item a:hover {
+    padding-bottom: 8px;
+    box-shadow: none;
+    background-color: rgb(58, 68, 155);
+  }
