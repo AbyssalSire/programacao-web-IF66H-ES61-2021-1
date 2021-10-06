@@ -1,0 +1,30 @@
+.home-content{
+  padding: 15px;
+  width: 1000px;
+}
+  
+.home-content-div{
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  height: 100px;
+}
+  
+.container-titulo{
+  height: 50px;
+}
+
+
+.btn-info{
+  border: none;
+  display: block;
+  background-color: #0671c8;
+  color: #fff;
+}
+
+.btn-info:hover{
+    background-color: #008cff;
+    color: #fff;
+}
+  
+  
+  
